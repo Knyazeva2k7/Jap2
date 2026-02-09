@@ -1,2 +1,5 @@
-nike;400;39;women
-abibas;250;36;men
+nike 400 39 women
+abibas 250 36 men
+ADIDASS 297 37 men
+Tyagi 148 48 men
+nikeAir 0 39 women
