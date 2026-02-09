@@ -1,0 +1,2 @@
+nike;400;39;women
+abibas;250;36;men
