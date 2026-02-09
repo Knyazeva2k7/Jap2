@@ -13,13 +13,13 @@ Shoes::Shoes(string nameShoes, double weightShoes, int sizeShoes, string genderS
 }
 
 void Shoes::print() {
-	cout << name << "\t Âåñ "
-		<< weight << "\t Ðàçìåð "
-		<< size << " \t Ìîäåëü"
+	cout << name << "\t Ã‚Ã¥Ã± "
+		<< weight << "\t ÃÃ Ã§Ã¬Ã¥Ã° "
+		<< size << " \t ÃŒÃ®Ã¤Ã¥Ã«Ã¼"
 		<< gender << endl;
 }
 
-//ñîðòèðîâêà ïî ðàçìåðó
+//Ã±Ã®Ã°Ã²Ã¨Ã°Ã®Ã¢ÃªÃ  Ã¯Ã® Ã°Ã Ã§Ã¬Ã¥Ã°Ã³
 
 void sortBubbleSize(vector<Shoes>& shoes) {
 	
@@ -27,6 +27,21 @@ void sortBubbleSize(vector<Shoes>& shoes) {
 	for (int i = 0; i < shoes.size(); i++) {
 		for (int j = i; j < shoes.size(); j++) {
 			if (shoes[i].size < shoes[j].size) {
+				Shoes temp = shoes[i];
+				shoes[i] = shoes[j];
+				shoes[j] = temp;
+			}
+		}
+	}
+
+}
+
+//ÑÐ¾Ñ€Ñ‚Ð¸Ñ€Ð¾Ð²ÐºÐ° Ð¿Ð¾ Ð²ÐµÑÑƒ Ð²Ð¾Ð·Ñ€Ð°ÑÑ‚Ð°Ð½Ð¸Ðµ
+void sortBubbleWeight(vector<Shoes>& shoes) {
+
+	for (int i = 0; i < shoes.size(); i++) {
+		for (int j = i; j < shoes.size(); j++) {
+			if (shoes[i].weight > shoes[j].weight) {
 				Shoes temp = shoes[i];
 				shoes[i] = shoes[j];
 				shoes[j] = temp;
