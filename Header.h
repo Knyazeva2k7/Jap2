@@ -17,3 +17,5 @@ public:
 };
 
 void sortBubbleSize(vector<Shoes>& shoes);
+
+void sortBubbleWeight(vector<Shoes>& shoes);
